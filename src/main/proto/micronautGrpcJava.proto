@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "micronaut.grpc.java";
+option java_outer_classname = "MicronautGrpcJava";
+option objc_class_prefix = "HLW";
+
+package micronaut.grpc.java;
+
+service MicronautGrpcJavaService {
+  rpc send (MicronautGrpcJavaRequest) returns (MicronautGrpcJavaReply) {}
+}
+
+message MicronautGrpcJavaRequest {
+  string name = 1;
+}
+
+message MicronautGrpcJavaReply {
+  string message = 1;
+}
