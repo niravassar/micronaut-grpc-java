@@ -32,7 +32,7 @@ curl --location --request GET 'https://launch.micronaut.io/create/grpc/micronaut
 
 This will create a micronaut project with grpc and protobuf dependencies that are needed.
 
-### proto file
+## Proto file
 
 The main proto file for the project is `niravStuff.proto`. It creates a service to receive a message, and defines a request and reply. 
 The service will respond with "Hello World".
