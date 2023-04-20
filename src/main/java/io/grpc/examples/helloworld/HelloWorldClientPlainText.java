@@ -3,9 +3,6 @@ package io.grpc.examples.helloworld;
 import io.grpc.Channel;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import io.grpc.StatusRuntimeException;
-
-import java.util.logging.Level;
 
 public class HelloWorldClientPlainText {
 
