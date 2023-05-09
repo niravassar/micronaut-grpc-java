@@ -51,15 +51,16 @@ in a test, you need to create a stub with a `ManagingChannel`. We do this with `
 
 ## Java Client
 
-You can create a stub and client by using the host name and port. We did this with `HelloWorldClientPlainText` and `HelloWorldClient`.
+You can create a stub and client by using the host name and port. We did this with `NiravServiceClientPlainText`.
 First you create the channel, and then using the channel, you must create the stub to the endpoint. You then use the stub to access the Grpc service.
 
 ## Default Hello World Included
 
-The grpc dependencies come with a default `helloworld.proto` as well, and I was able to excerise that endpoint, which is inherently built in with 
+The grpc dependencies come with a default `helloworld.proto` as well, and I was able to exercise that endpoint, which is inherently built in with 
 the build process. See `micronaut-grpc-opentracing-3.5.0.jar!\helloworld.proto`.
 
-The classes `GreetingEndpointTest` and `GreetingEndpoint` demonstrate the communication. 
+The classes `GreetingEndpointTest` and `GreetingEndpoint` demonstrate the communication. `HelloWorldClient` and `HelloWorldClientPlainText` demonstrate
+the client communication. 
 
 ## References
 
